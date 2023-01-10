@@ -36,7 +36,7 @@ function Contacts({ contact }: { contact: ContactType[] }) {
         </Contact>
       ))}
       {data.showCredit && (
-        <Credit>Resume template fabricated by Stumpf Dominik.</Credit>
+        <Credit>Resume template fabricated by Dominik Stumpf.</Credit>
       )}
     </ContactContainer>
   );
