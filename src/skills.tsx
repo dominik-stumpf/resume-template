@@ -1,6 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { Body1, Body2, Caption, Subhead1, Subhead2, Title } from "./FontScales";
+import {
+  Body1,
+  Body2,
+  Caption,
+  Subhead1,
+  Subhead2,
+  Title,
+} from "./font-scales";
 import { v4 as uuidv4 } from "uuid";
 import { SkillType } from "./resume-data-type";
 

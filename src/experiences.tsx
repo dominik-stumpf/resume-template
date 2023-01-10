@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
-import { Article, ArticleBox } from "./ArticleTools";
+import { Article, ArticleBox } from "./article-tools";
 import { ExperienceType } from "./resume-data-type";
 
 function Experiences(props: { experiences: ExperienceType[] }) {

@@ -8,8 +8,8 @@ import {
   Body2,
   TextSizes,
   Headline,
-} from "./FontScales";
-import HorizontalRule from "./HorizontalRule";
+} from "./font-scales";
+import HorizontalRule from "./horizontal-rule";
 
 interface LocationDateTitleProps {
   location: string;

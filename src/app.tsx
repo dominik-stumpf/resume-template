@@ -1,13 +1,13 @@
 import { data } from "./resume-data";
 import styled, { ThemeProvider } from "styled-components";
 import { useEffect } from "react";
-import { Display } from "./FontScales";
-import { GlobalStyle } from "./GlobalStyle";
-import { globalTheme } from "./GlobalTheme";
-import Contacts from "./Contacts";
-import { ListTitle } from "./ArticleTools";
-import NonTechnical from "./NonTechnical";
-import Technical from "./Technical";
+import { Display } from "./font-scales";
+import { GlobalStyle } from "./global-style";
+import { globalTheme } from "./global-theme";
+import Contacts from "./contacts";
+import { ListTitle } from "./article-tools";
+import NonTechnical from "./non-technical";
+import Technical from "./technical";
 
 const Root = styled.div`
   max-width: 1400px;

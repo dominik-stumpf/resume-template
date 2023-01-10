@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Caption, Subhead1 } from "./FontScales";
+import { Caption, Subhead1 } from "./font-scales";
 import { v4 as uuidv4 } from "uuid";
 import { ContactType } from "./resume-data-type";
 import { data } from "./resume-data";
@@ -35,7 +35,9 @@ function Contacts({ contact }: { contact: ContactType[] }) {
           <Subhead1>{cont.contact}</Subhead1>
         </Contact>
       ))}
-      {data.showCredit && <Credit>Resume fabricated by Stumpf Dominik.</Credit>}
+      {data.showCredit && (
+        <Credit>Resume template fabricated by Stumpf Dominik.</Credit>
+      )}
     </ContactContainer>
   );
 }

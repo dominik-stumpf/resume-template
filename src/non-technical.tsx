@@ -7,7 +7,7 @@ import {
   Subhead1,
   Subhead2,
   Title,
-} from "./FontScales";
+} from "./font-scales";
 import { v4 as uuidv4 } from "uuid";
 import {
   Category,
@@ -15,10 +15,10 @@ import {
   Article,
   ArticleBox,
   CategoryHeadline,
-} from "./ArticleTools";
+} from "./article-tools";
 import { nonTechnicalType } from "./resume-data-type";
-import PersonalTraits from "./PersonalTraits";
-import Education from "./Education";
+import PersonalTraits from "./personal-traits";
+import Education from "./education";
 
 export default function NonTechnical({
   sectionData,

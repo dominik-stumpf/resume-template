@@ -10,7 +10,7 @@ import {
   Caption,
   Overline,
   Button,
-} from "./FontScales";
+} from "./font-scales";
 
 const FontScaleContainer = styled.div`
   display: flex;
