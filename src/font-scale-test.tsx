@@ -16,6 +16,9 @@ const FontScaleContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
+  * {
+    margin: 0;
+  }
 `;
 
 function FontScaleTest() {

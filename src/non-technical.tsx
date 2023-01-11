@@ -1,14 +1,6 @@
 import styled from "styled-components";
-import {
-  Body1,
-  Body2,
-  Headline,
-  Overline,
-  Subhead1,
-  Subhead2,
-  Title,
-} from "./font-scales";
-import { v4 as uuidv4 } from "uuid";
+import { Body2 } from "./font-scales";
+import { v4 as uuidv4, v4 } from "uuid";
 import {
   Category,
   ListTitle,
@@ -19,6 +11,12 @@ import {
 import { nonTechnicalType } from "./resume-data-type";
 import PersonalTraits from "./personal-traits";
 import Education from "./education";
+
+const BioParagraphHolder = styled.div`
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+`;
 
 export default function NonTechnical({
   sectionData,
@@ -65,7 +63,11 @@ export default function NonTechnical({
       {sectionData.biography && (
         <Category>
           <ListTitle>Biography</ListTitle>
-          <Body2>{sectionData.biography}</Body2>
+          <BioParagraphHolder>
+            {sectionData.biography.split("\n").map((paragraph) => {
+              return <Body2 key={v4()}>{paragraph}</Body2>;
+            })}
+          </BioParagraphHolder>
         </Category>
       )}
     </>

@@ -69,8 +69,8 @@ const data: ResumeDataStruct = {
   ],
   nonTechnical: {
     biography:
-      'Although born into an Anglican family, by his thirties Newton held a Christian faith that, had it been made public, would not have been considered orthodox by mainstream Christianity,[122] with one historian labelling him a heretic.[123] \
-      By 1672, he had started to record his theological researches in notebooks which he showed to no one and which have only recently[when?] been examined. They demonstrate an extensive knowledge of early Church writings and show that in the conflict between Athanasius and Arius which defined the Creed, he took the side of Arius, the loser, who rejected the conventional view of the Trinity. Newton "recognized Christ as a divine mediator between God and man, who was subordinate to the Father who created him."[124] He was especially interested in prophecy, but for him, "the great apostasy was trinitarianism."[125] \
+      'Although born into an Anglican family, by his thirties Newton held a Christian faith that, had it been made public, would not have been considered orthodox by mainstream Christianity,[122] with one historian labelling him a heretic.\n[123] \
+      By 1672, he had started to record his theological researches in notebooks which he showed to no one and which have only recently[when?] been examined.\n They demonstrate an extensive knowledge of early Church writings and show that in the conflict between Athanasius and Arius which defined the Creed, he took the side of Arius, the loser, who rejected the conventional view of the Trinity. Newton "recognized Christ as a divine mediator between God and man, who was subordinate to the Father who created him."[124] He was especially interested in prophecy, but for him, "the great apostasy was trinitarianism."[125] \
       Newton tried unsuccessfully to obtain one of the two fellowships that exempted the holder from the ordination requirement.',
     education: [
       {
