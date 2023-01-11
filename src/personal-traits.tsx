@@ -1,5 +1,5 @@
 import { Subhead1, Body2, Subhead2 } from "./font-scales";
-import { PersonalTraitType } from "./resume-data-type";
+import { PersonalTraitType } from "../data/resume-data-type";
 import { capitalize } from "./utils";
 import { v4 as uuidv4 } from "uuid";
 import styled from "styled-components";

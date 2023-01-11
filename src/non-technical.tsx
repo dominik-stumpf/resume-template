@@ -8,7 +8,7 @@ import {
   ArticleBox,
   CategoryHeadline,
 } from "./article-tools";
-import { nonTechnicalType } from "./resume-data-type";
+import { nonTechnicalType } from "../data/resume-data-type";
 import PersonalTraits from "./personal-traits";
 import Education from "./education";
 

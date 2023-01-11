@@ -1,7 +1,7 @@
 import { v4 } from "uuid";
 import { Category, CategoryHeadline, ListTitle } from "./article-tools";
 import Experiences from "./experiences";
-import { TechnicalType } from "./resume-data-type";
+import { TechnicalType } from "../data/resume-data-type";
 import Skills from "./skills";
 
 export default function Technical({

@@ -9,7 +9,7 @@ import {
   Title,
 } from "./font-scales";
 import { v4 as uuidv4 } from "uuid";
-import { SkillType } from "./resume-data-type";
+import { SkillType } from "../data/resume-data-type";
 
 const Container = styled.ul`
   margin: 0;

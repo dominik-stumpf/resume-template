@@ -1,7 +1,7 @@
 import React from "react";
 import { v4 } from "uuid";
 import { Article } from "./article-tools";
-import { EducationType } from "./resume-data-type";
+import { EducationType } from "../data/resume-data-type";
 
 export default function Education(props: EducationType) {
   return (

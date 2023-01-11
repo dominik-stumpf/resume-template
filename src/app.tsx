@@ -1,4 +1,4 @@
-import { data } from "./resume-data";
+import { data } from "../data/resume-data";
 import styled, { ThemeProvider } from "styled-components";
 import { useEffect } from "react";
 import { Display } from "./font-scales";

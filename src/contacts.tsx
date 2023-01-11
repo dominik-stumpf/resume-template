@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { Caption, Subhead1 } from "./font-scales";
 import { v4 as uuidv4 } from "uuid";
-import { ContactType } from "./resume-data-type";
-import { data } from "./resume-data";
+import { ContactType } from "../data/resume-data-type";
+import { data } from "../data/resume-data";
 
 const Contact = styled.span`
   font-family: "Bitter";
