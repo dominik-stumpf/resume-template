@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "write-ci": "rome check --apply app && rome format --write app"
   },
   "dependencies": {
     "@types/node": "20.4.2",
