@@ -16,6 +16,9 @@
       "nursery": {
         "all": true,
         "noConsoleLog": "off"
+      },
+      "suspicious": {
+        "noRedundantUseStrict": "off"
       }
     }
   },
