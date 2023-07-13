@@ -1,8 +1,5 @@
-# Resume Template
+# Introduction
 
-Hello there, I wrote an extensible, print friendly and somewhat responsive resume for myself so that I can customize it to my liking later on. The plan is to use this throughout my career.
+Hello! I wrote an open source, extensible, print friendly and somewhat responsive resume template for myself so that I can customize it to my liking later on. I plan to use this throughout my career and there isn't much to add. Feel free to use this template as your own.
 
 ![preview of layout](media/preview.png)
-
-The code is far from nice, but it does the job.
-Feel free to gain inspiration or use this template as your own.
