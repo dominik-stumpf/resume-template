@@ -1,4 +1,4 @@
-import { ThemeProps } from '@/app/styles/theme';
+import { ThemeProps } from '@/src/styles/theme';
 import '@emotion/core';
 import '@emotion/react';
 import '@emotion/styled';
