@@ -7,7 +7,6 @@ export const globalStyles = css({
     boxSizing: 'border-box',
     textSizeAdjust: '100%',
     textRendering: 'optimizeLegibility',
-    '-webkit-font-smoothing': 'antialiased',
     fontFeatureSettings: '"rlig" 1,"calt" 0',
   },
   body: {

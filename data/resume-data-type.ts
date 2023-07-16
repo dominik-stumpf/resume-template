@@ -1,5 +1,3 @@
-import { IconType } from "react-icons";
-
 export type ExperienceType = {
   occupier: string;
   role: string;
@@ -10,7 +8,6 @@ export type ExperienceType = {
 
 export type ContactType = {
   name: string;
-  icon?: IconType;
   contact: string;
 };
 

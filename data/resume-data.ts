@@ -1,6 +1,3 @@
-import { MdMail, MdPhone } from "react-icons/md";
-import { FaGithub } from "react-icons/fa";
-import { SiCodewars } from "react-icons/si";
 import { ResumeDataStruct } from "./resume-data-type";
 
 const data: ResumeDataStruct = {
@@ -112,16 +109,7 @@ const data: ResumeDataStruct = {
       interests: "Math, programming, horror movies, pistachio",
     },
   },
-  contact: [
-    { name: "email", icon: MdMail, contact: "john.doe@gmail.com" },
-    { name: "phone", icon: MdPhone, contact: "45 93/430-35-44" },
-    { name: "github", icon: FaGithub, contact: "github.com/johndoe" },
-    {
-      name: "codewars",
-      icon: SiCodewars,
-      contact: "codewars.com/users/johndoe",
-    },
-  ],
+  contact: [ ],
   showCredit: false,
 };
 

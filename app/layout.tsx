@@ -1,7 +1,5 @@
 import type { Metadata } from 'next';
-import { Fraunces, Space_Grotesk } from 'next/font/google';
-
-// const inter = Inter({ subsets: ['latin'] });
+// import { Fraunces, Space_Grotesk } from 'next/font/google';
 
 export const metadata: Metadata = {
   title: 'resume-template',
