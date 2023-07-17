@@ -6,7 +6,7 @@ import { Global, ThemeProvider } from '@emotion/react';
 import styled from '@emotion/styled';
 
 const Box = styled.div(({ theme }) => ({
-  color: theme.best,
+  color: theme.color.primary,
   fontFamily: theme.sansSerifFont,
   fontSize: 128,
 }));

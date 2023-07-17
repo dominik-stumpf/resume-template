@@ -1,3 +1,4 @@
+import { replaceThemeValueToCSSVar } from './theme-helpers';
 import { Fraunces, Space_Grotesk } from 'next/font/google';
 
 const spaceGrotesk = Space_Grotesk({
@@ -14,10 +15,13 @@ const fraunces = Fraunces({
 
 const activeFonts = { spaceGrotesk, fraunces } as const;
 
-export const theme = {
-  best: 'red',
+export const rawTheme = {
+  color: {
+    primary: 'red',
+  },
   sansSerifFont: activeFonts.spaceGrotesk.style.fontFamily,
   serifFont: activeFonts.fraunces.style.fontFamily,
 };
 
+export const theme = replaceThemeValueToCSSVar(rawTheme);
 export type ThemeProps = typeof theme;
