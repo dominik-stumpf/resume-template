@@ -1,4 +1,4 @@
-import { themeParser } from './theme-parser';
+import { themeParser } from 'jutop';
 import { Fraunces, Space_Grotesk } from 'next/font/google';
 
 const spaceGrotesk = Space_Grotesk({

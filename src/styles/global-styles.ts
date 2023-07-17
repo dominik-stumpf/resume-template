@@ -1,6 +1,6 @@
 import { rawTheme } from './theme';
-import { themeParser } from './theme-parser';
 import { css } from '@emotion/react';
+import { themeParser } from 'jutop';
 
 export const globalStyles = css({
   '*': {
