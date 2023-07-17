@@ -1,4 +1,4 @@
-import { replaceThemeValueToCSSVar } from './theme-helpers';
+import { themeParser } from './theme-parser';
 import { Fraunces, Space_Grotesk } from 'next/font/google';
 
 const spaceGrotesk = Space_Grotesk({
@@ -23,5 +23,5 @@ export const rawTheme = {
   serifFont: activeFonts.fraunces.style.fontFamily,
 };
 
-export const theme = replaceThemeValueToCSSVar(rawTheme);
+export const theme = themeParser.replaceThemeValueToCSSVar(rawTheme);
 export type ThemeProps = typeof theme;

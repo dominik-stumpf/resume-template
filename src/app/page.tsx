@@ -11,12 +11,18 @@ const Box = styled.div(({ theme }) => ({
   fontSize: 128,
 }));
 
+const Title = styled.div(({ theme }) => ({
+  fontFamily: theme.serifFont,
+  fontSize: 256,
+}));
+
 export default function Home() {
   return (
     <main>
       <Global styles={globalStyles} />
       <ThemeProvider theme={theme}>
         <Box>brown fox</Box>
+        <Title>jumps over the lazy dog</Title>
       </ThemeProvider>
     </main>
   );

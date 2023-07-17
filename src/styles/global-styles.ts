@@ -1,5 +1,5 @@
 import { rawTheme } from './theme';
-import { parseObjToCSSVariables } from './theme-helpers';
+import { themeParser } from './theme-parser';
 import { css } from '@emotion/react';
 
 export const globalStyles = css({
@@ -15,6 +15,6 @@ export const globalStyles = css({
     color: 'white',
   },
   ':root': {
-    ...parseObjToCSSVariables(rawTheme),
+    ...themeParser.parseObjToCSSVariables(rawTheme),
   },
 });
