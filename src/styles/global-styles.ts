@@ -10,10 +10,6 @@ export const globalStyles = css({
     textSizeAdjust: '100%',
     textRendering: 'optimizeLegibility',
   },
-  body: {
-    backgroundColor: 'black',
-    color: 'white',
-  },
   ':root': {
     ...themeParser.parseObjToCSSVariables(rawTheme),
   },

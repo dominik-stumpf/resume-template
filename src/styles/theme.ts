@@ -16,11 +16,14 @@ const fraunces = Fraunces({
 const activeFonts = { spaceGrotesk, fraunces } as const;
 
 export const rawTheme = {
-  color: {
-    primary: 'red',
-  },
   sansSerifFont: activeFonts.spaceGrotesk.style.fontFamily,
   serifFont: activeFonts.fraunces.style.fontFamily,
+  color: {
+    primary: '#65C045',
+    paragraph: '#525252',
+    separator: '#777',
+    title: '#333',
+  },
 };
 
 export const theme = themeParser.replaceThemeValueToCSSVar(rawTheme);
