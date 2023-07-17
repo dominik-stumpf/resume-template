@@ -1,5 +1,9 @@
 class ThemeParser {
-  constructor(private readonly prefix = '') {}
+  private prefix;
+
+  constructor(prefix = '') {
+    this.prefix = prefix;
+  }
 
   private convertPascalToKebabCase(variable: string) {
     return `${variable.replace(/[A-Z]/g, '-$&').toLowerCase()}`;
