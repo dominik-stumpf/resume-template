@@ -18,8 +18,10 @@ const activeFonts = { spaceGrotesk, fraunces } as const;
 export const rawTheme = {
   sansSerifFont: activeFonts.spaceGrotesk.style.fontFamily,
   serifFont: activeFonts.fraunces.style.fontFamily,
+  fontBase: 14,
+  fontRatio: 1.6,
   color: {
-    primary: '#65C045',
+    primary: '#175A00',
     paragraph: '#525252',
     separator: '#777',
     title: '#333',

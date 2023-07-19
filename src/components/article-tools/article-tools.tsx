@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 const ArticleTitleDateBox = styled.div({
   display: 'flex',
   gap: 16,
+  alignItems: 'center',
 });
 
 export function ArticleTitleDate({

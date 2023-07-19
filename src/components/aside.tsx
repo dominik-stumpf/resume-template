@@ -56,13 +56,13 @@ export function Aside() {
             tools of programming.
           </p>
         </section>
-        <div>
-          <strong>note</strong>
+        <blockquote>
+          <strong>NOTE</strong>
           <p>
             Some of my projects are still in development, and I plan to make
             them open-source in the future.
           </p>
-        </div>
+        </blockquote>
       </article>
     </aside>
   );
