@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "write-ci": "rome check --apply app && rome format --write app"
+    "write-ci": "rome check --apply src && rome format --write src"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
