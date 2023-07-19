@@ -17,7 +17,9 @@ export const globalStyles = css({
   body: {
     fontSize: `calc(${theme.fontBase} * 1px)`,
     fontFamily: theme.sansSerifFont,
-    padding: 16,
+    '@media not print': {
+      padding: 32,
+    },
   },
   'h1, h2, h3': {
     fontFamily: theme.serifFont,
