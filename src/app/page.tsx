@@ -1,18 +1,23 @@
 'use client';
 
-import { Heading1, Text } from '../styles/fonts';
+import { Aside } from '../components/aside';
+import { Experiences } from '../components/experiences';
+import { Header } from '../components/header';
 import { globalStyles } from '../styles/global-styles';
 import { theme } from '../styles/theme';
 import { Global, ThemeProvider } from '@emotion/react';
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Global styles={globalStyles} />
       <ThemeProvider theme={theme}>
-        <Heading1>Dominik Tesco</Heading1>
-        <Text>front-end software engineer</Text>
+        <Header />
+        <main>
+          <Experiences />
+          <Aside />
+        </main>
       </ThemeProvider>
-    </main>
+    </>
   );
 }

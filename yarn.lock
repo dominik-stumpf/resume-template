@@ -466,10 +466,10 @@ json-parse-even-better-errors@^2.3.0:
   resolved "https://registry.yarnpkg.com/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz#7c47805a94319928e05777405dc12e1f7a4ee02d"
   integrity sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w==
 
-jutop@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/jutop/-/jutop-1.0.0.tgz#064939e0c12d7630430307038f52e3d7ec2ba137"
-  integrity sha512-UvpiEOhIuNlAJ0QLtz9h3/11AXOcPWNWvnYVaK3fkZh5OklhKP8OswXq9AklTdLRCtrbl2h1rn56tpRgnoZ2mw==
+jutop@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/jutop/-/jutop-1.0.1.tgz#2a07b63bd1f633049f45a8e179d064a84cdadb1a"
+  integrity sha512-yA0omQ5lc2r/d/fkH2D+QiUHK5HNIyo94woso/5bxrsWpZHuacNxU3N/s16WXuH61UNkb1JY/7Pqnn6iM9znBQ==
 
 lines-and-columns@^1.1.6:
   version "1.2.4"
