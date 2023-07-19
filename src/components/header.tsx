@@ -1,10 +1,16 @@
+import styled from '@emotion/styled';
 import { Icon } from '@iconify-icon/react';
+
+const Subheader = styled.div(({ theme }) => ({
+  fontSize: `calc(${theme.fontBase} * (${theme.fontRatio} * 2px))`,
+  fontWeight: 100,
+}));
 
 export function Header() {
   return (
     <header>
       <h1>Dominik Stumpf</h1>
-      <div>front-end software engineer</div>
+      <Subheader>front-end software engineer</Subheader>
       <ul>
         <li>
           <Icon icon={'material-symbols:web'} />

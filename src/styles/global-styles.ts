@@ -1,3 +1,4 @@
+import { fontVariationSettingsHelper } from './font-variation-settings-helper';
 import { rawTheme } from './theme';
 import { css } from '@emotion/react';
 import { themeParser } from 'jutop';
@@ -9,8 +10,6 @@ export const globalStyles = css({
     margin: 0,
     padding: 0,
     boxSizing: 'border-box',
-    // textSizeAdjust: '100%',
-    // textRendering: 'optimizeLegibility',
   },
   ':root': {
     ...themeParser.parseObjToCSSVariables(rawTheme),
@@ -21,23 +20,39 @@ export const globalStyles = css({
     fontFamily: theme.serifFont,
     textTransform: 'capitalize',
     letterSpacing: -0.4,
-    margin: '16px 0',
   },
   h1: {
-    fontSize: `calc(${theme.fontBase} * (${theme.fontRatio} * 3px))`,
+    fontSize: `calc(${theme.fontBase} * (${theme.fontRatio} * 4px))`,
     color: theme.color.primary,
-    fontFeatureSettings: '"opsz" 64, "wght" 600, "SOFT" 100, "WONK" 1',
+    fontVariationSettings: fontVariationSettingsHelper({
+      opticalSizing: 64,
+      weight: 600,
+      soft: 100,
+      wonk: 1,
+    }),
   },
   h2: {
     fontSize: `calc(${theme.fontBase} * (${theme.fontRatio} * 2px))`,
     color: theme.color.primary,
-    fontFeatureSettings: '"opsz" 32, "wght" 500, "SOFT" 100, "WONK" 1',
+    margin: '16px 0',
+    fontVariationSettings: fontVariationSettingsHelper({
+      opticalSizing: 32,
+      weight: 500,
+      soft: 100,
+      wonk: 1,
+    }),
   },
   h3: {
     fontSize: `calc(${theme.fontBase} * (${theme.fontRatio} * 1px))`,
     color: theme.color.title,
     textTransform: 'none',
-    fontFeatureSettings: '"opsz" 32, "wght" 450, "SOFT" 100, "WONK" 1',
+    margin: '16px 0',
+    fontVariationSettings: fontVariationSettingsHelper({
+      opticalSizing: 32,
+      weight: 450,
+      soft: 100,
+      wonk: 1,
+    }),
   },
   p: {
     fontSize: `calc(${theme.fontBase} * 1px)`,
