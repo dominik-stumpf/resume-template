@@ -13,8 +13,11 @@ export const globalStyles = css({
   },
   ':root': {
     ...themeParser.parseObjToCSSVariables(rawTheme),
+  },
+  body: {
     fontSize: `calc(${theme.fontBase} * 1px)`,
     fontFamily: theme.sansSerifFont,
+    padding: 16,
   },
   'h1, h2, h3': {
     fontFamily: theme.serifFont,

@@ -4,31 +4,54 @@ import { Icon } from '@iconify-icon/react';
 const Subheader = styled.div(({ theme }) => ({
   fontSize: `calc(${theme.fontBase} * (${theme.fontRatio} * 2px))`,
   fontWeight: 100,
+  letterSpacing: -0.32,
+}));
+
+const Box = styled.header({
+  display: 'flex',
+  gap: 16,
+  justifyContent: 'space-between',
+  alignItems: 'center',
+});
+
+const ContactList = styled.ul(({ theme }) => ({
+  display: 'flex',
+  flexFlow: 'column nowrap',
+  gap: 16,
+}));
+const ContactItem = styled.li(({ theme }) => ({
+  listStyle: 'none',
+  display: 'flex',
+  gap: 8,
+  alignItems: 'center',
+  fontSize: `calc(${theme.fontBase} * (${theme.fontRatio} * 1px))`,
 }));
 
 export function Header() {
   return (
-    <header>
-      <h1>Dominik Stumpf</h1>
-      <Subheader>front-end software engineer</Subheader>
-      <ul>
-        <li>
+    <Box>
+      <div>
+        <h1>Dominik Stumpf</h1>
+        <Subheader>front-end software engineer</Subheader>
+      </div>
+      <ContactList>
+        <ContactItem>
           <Icon icon={'material-symbols:web'} />
           dominikstumpf.com
-        </li>
-        <li>
+        </ContactItem>
+        <ContactItem>
           <Icon icon={'material-symbols:alternate-email-rounded'} />
           s.dominik.stumpf@gmail.com
-        </li>
-        <li>
+        </ContactItem>
+        <ContactItem>
           <Icon icon={'cib:github'} />
           github.com/dominik-stumpf
-        </li>
-        <li>
+        </ContactItem>
+        <ContactItem>
           <Icon icon={'cib:codewars'} />
           codewars.com/users/sdomi
-        </li>
-      </ul>
-    </header>
+        </ContactItem>
+      </ContactList>
+    </Box>
   );
 }
