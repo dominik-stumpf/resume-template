@@ -28,10 +28,10 @@ export function Aside() {
       </article>
       <section>
         <h2>interests</h2>
-        <h3>
+        <p>
           Math, computer graphics, calisthenics, typography, software
           development and other bits and bobs :)
-        </h3>
+        </p>
       </section>
       <article>
         <h2>projects</h2>
