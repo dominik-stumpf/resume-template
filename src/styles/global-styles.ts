@@ -69,7 +69,7 @@ export const globalStyles = css({
     color: theme.color.paragraph,
   },
   blockquote: {
-    padding: 16,
+    padding: '8px 16px',
     borderLeft: `2px solid ${theme.color.primary}`,
   },
 });
