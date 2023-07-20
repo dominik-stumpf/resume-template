@@ -22,9 +22,9 @@ export const rawTheme = {
   fontRatio: 1.2,
   color: {
     primary: '#175A00',
-    paragraph: '#525252',
-    separator: '#777',
-    title: '#333',
+    paragraph: '#454545',
+    dim: '#757575',
+    title: '#303030',
   },
 };
 

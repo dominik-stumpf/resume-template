@@ -5,11 +5,12 @@ import {
 import styled from '@emotion/styled';
 import { useEffect, useState } from 'react';
 
-const ArticleTitleDateBox = styled.div({
+const ArticleTitleDateBox = styled.div(({ theme }) => ({
   display: 'flex',
   gap: 16,
-  alignItems: 'center',
-});
+  alignItems: 'baseline',
+  color: theme.color.dim,
+}));
 
 export function ArticleTitleDate({
   title,

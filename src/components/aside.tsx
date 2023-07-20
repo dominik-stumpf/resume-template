@@ -1,7 +1,15 @@
+import styled from '@emotion/styled';
+
+const SkillArticle = styled.article({
+  h3: {
+    textTransform: 'capitalize',
+  },
+});
+
 export function Aside() {
   return (
     <aside>
-      <article>
+      <SkillArticle>
         <h2>skills & knowledge</h2>
         <section>
           <h3>programming languages & relations</h3>
@@ -25,7 +33,7 @@ export function Aside() {
             eslint/prettier, Chrome DevTools
           </p>
         </section>
-      </article>
+      </SkillArticle>
       <section>
         <h2>interests</h2>
         <p>
