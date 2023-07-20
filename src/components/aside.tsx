@@ -63,7 +63,7 @@ export function Aside() {
       <article>
         <h2>projects</h2>
         <section>
-          <h3>Portfolio</h3>
+          <h3>portfolio</h3>
           <Description>
             <p>
               An interactive website displaying my journey and passion using the
@@ -84,18 +84,18 @@ export function Aside() {
           <h3>resume-template</h3>
           <Description>
             <p>
-              An interactive website displaying my journey and passion using the
-              tools of programming.
+              Extensible, print friendly and somewhat responsive resume
+              template.
             </p>
           </Description>
         </section>
-        <Note>
+        {/* <Note>
           <strong>NOTE</strong>
           <p>
             Some of my projects are still in development, and I plan to make
             them open-source in the future.
           </p>
-        </Note>
+        </Note> */}
       </article>
     </aside>
   );
