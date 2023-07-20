@@ -41,7 +41,7 @@ export function Header() {
         </ContactItem>
         <ContactItem>
           <Icon icon={'material-symbols:alternate-email-rounded'} />
-          s.dominik.stumpf@gmail.com
+          s.dominik.work@gmail.com
         </ContactItem>
         <ContactItem>
           <Icon icon={'cib:github'} />
