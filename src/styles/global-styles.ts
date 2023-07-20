@@ -20,6 +20,8 @@ export const globalStyles = css({
     '@media not print': {
       padding: 32,
     },
+    maxWidth: 900,
+    margin: '0 auto',
   },
   'h1, h2, h3': {
     fontFamily: theme.serifFont,
@@ -39,7 +41,7 @@ export const globalStyles = css({
   h2: {
     fontSize: `calc(${theme.fontBase} * (${theme.fontRatio} * 2px))`,
     color: theme.color.primary,
-    margin: '16px 0',
+    margin: '16px 0 8px',
     fontVariationSettings: fontVariationSettingsHelper({
       opticalSizing: 32,
       weight: 500,
@@ -51,7 +53,7 @@ export const globalStyles = css({
     fontSize: `calc(${theme.fontBase} * (${theme.fontRatio} * 1px))`,
     color: theme.color.title,
     textTransform: 'none',
-    margin: '16px 0',
+    margin: '16px 0 8px',
     fontVariationSettings: fontVariationSettingsHelper({
       opticalSizing: 32,
       weight: 450,
@@ -68,6 +70,6 @@ export const globalStyles = css({
   },
   blockquote: {
     padding: 16,
-    borderLeft: `4px solid ${theme.color.primary}`,
+    borderLeft: `2px solid ${theme.color.primary}`,
   },
 });
