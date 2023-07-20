@@ -52,7 +52,7 @@ export function Aside() {
         </section>
       </SkillArticle>
       <section>
-        <h3>Interests</h3>
+        <h2>Interests</h2>
         <Description>
           <p>
             Math, computer graphics, calisthenics, typography, software

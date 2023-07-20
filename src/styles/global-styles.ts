@@ -67,6 +67,7 @@ export const globalStyles = css({
     lineHeight: 1.4,
     letterSpacing: 0.04,
     color: theme.color.paragraph,
+    maxWidth: 380,
   },
   blockquote: {
     padding: '8px 16px',
