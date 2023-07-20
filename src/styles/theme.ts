@@ -21,9 +21,9 @@ export const rawTheme = {
   fontBase: 12,
   fontRatio: 1.2,
   color: {
-    primary: '#175A00',
+    primary: '#439345',
     paragraph: '#454545',
-    dim: '#757575',
+    dim: '#666',
     title: '#303030',
   },
 };

@@ -26,11 +26,12 @@ export const globalStyles = css({
   'h1, h2, h3': {
     fontFamily: theme.serifFont,
     textTransform: 'capitalize',
-    letterSpacing: -0.4,
+    lineHeight: 1.2,
   },
   h1: {
     fontSize: `calc(${theme.fontBase} * (${theme.fontRatio} * 4px))`,
     color: theme.color.primary,
+    letterSpacing: -1.0,
     fontVariationSettings: fontVariationSettingsHelper({
       opticalSizing: 64,
       weight: 600,
@@ -42,6 +43,7 @@ export const globalStyles = css({
     fontSize: `calc(${theme.fontBase} * (${theme.fontRatio} * 2px))`,
     color: theme.color.primary,
     margin: '16px 0 8px',
+    letterSpacing: -1.0,
     fontVariationSettings: fontVariationSettingsHelper({
       opticalSizing: 32,
       weight: 500,
@@ -54,6 +56,7 @@ export const globalStyles = css({
     color: theme.color.title,
     textTransform: 'none',
     margin: '16px 0 8px',
+    letterSpacing: -0.5,
     fontVariationSettings: fontVariationSettingsHelper({
       opticalSizing: 32,
       weight: 450,
@@ -64,8 +67,7 @@ export const globalStyles = css({
   p: {
     fontSize: `calc(${theme.fontBase} * 1px)`,
     fontFamily: theme.sansSerifFont,
-    lineHeight: 1.4,
-    letterSpacing: 0.04,
+    lineHeight: 1.5,
     color: theme.color.paragraph,
     maxWidth: 380,
   },
