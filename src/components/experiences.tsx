@@ -14,8 +14,8 @@ export function Experiences() {
         />
         <Description>
           <p>
-            Started learning the GLSL shader language and 3D graphics using
-            fragment and vertex shaders.
+            Started learning the <b>GLSL shader language</b> and 3D graphics
+            using fragment and vertex shaders.
           </p>
         </Description>
       </section>
@@ -54,8 +54,8 @@ export function Experiences() {
         />
         <Description>
           <p>
-            Participated in EPAM Szeged's first Front-end recruit program and
-            acquired the groundwork needed in the web development business.
+            Participated in EPAM Szeged's first <i>Front-end recruit program</i>{' '}
+            and acquired the groundwork needed in the web development business.
           </p>
         </Description>
       </section>
