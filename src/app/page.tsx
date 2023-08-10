@@ -11,7 +11,7 @@ import styled from '@emotion/styled';
 const MainBox = styled.main({
   display: 'grid',
   marginTop: 16,
-  gridTemplateColumns: '1fr 0.9fr',
+  gridTemplateColumns: '1fr 0.8fr',
   gridGap: 32,
 });
 

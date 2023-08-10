@@ -14,7 +14,7 @@ export function Experiences() {
         />
         <Description>
           <p>
-            Started learning the <b>GLSL shader language</b> and 3D graphics
+            Started learning the <i>GLSL shader language</i> and 3D graphics
             using fragment and vertex shaders.
           </p>
         </Description>
@@ -27,9 +27,8 @@ export function Experiences() {
         />
         <Description>
           <p>
-            The first front-end framework I started learning is react, along
-            with typescript. Projects have been created with them, like my
-            portfolio.
+            These tools taught me type safety and along with Next.js introduced
+            me to the <em>component-based design</em> world.
           </p>
         </Description>
       </section>
@@ -41,9 +40,9 @@ export function Experiences() {
         />
         <Description>
           <p>
-            By reading the official Node.js guide, I’ve got an understanding of
-            how the runtime works, explored its APIs as well as various
-            front-end and back-end frameworks via npm.
+            By reading the <i>official Node.js guide</i>, I’ve got an
+            understanding of how the runtime works, explored its APIs as well as
+            various front-end and back-end frameworks via npm.
           </p>
         </Description>
       </section>
@@ -54,8 +53,9 @@ export function Experiences() {
         />
         <Description>
           <p>
-            Participated in EPAM Szeged's first <i>Front-end recruit program</i>{' '}
-            and acquired the groundwork needed in the web development business.
+            Participated in EPAM Szeged's first Front-end recruit program and{' '}
+            <b>acquired the groundwork</b> needed in the web development
+            business.
           </p>
         </Description>
       </section>
@@ -66,8 +66,8 @@ export function Experiences() {
         />
         <Description>
           <p>
-            Independently started learning the basic tools of the web in order
-            to make simple sites for the internet.
+            I started learning the basic tools of the web in order to make
+            simple sites for the internet.
           </p>
         </Description>
       </section>
@@ -82,6 +82,13 @@ export function Experiences() {
             computer works and through the python ecosystem I got motivated to
             start making my own projects.
           </p>
+          <p>Favorite libraries at the time</p>
+          <ul>
+            <li>Selenium</li>
+            <li>OpenCV</li>
+            <li>Matplotlib</li>
+            <li>NumPy</li>
+          </ul>
         </Description>
       </section>
     </article>

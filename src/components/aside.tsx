@@ -23,30 +23,33 @@ export function Aside() {
         <section>
           <h3>programming languages & relations</h3>
           <Description>
-            <p>HTML, CSS, SCSS, Javascript, Typescript, C#, Python</p>
+            <p>
+              HTML, CSS, SCSS, Javascript, <strong>Typescript</strong>, C#,
+              Python
+            </p>
           </Description>
         </section>
         <section>
           <h3>libraries</h3>
           <Description>
             <p>
-              React, styled-components, Emotion (CSS in JS), Three.js,
-              react-spring, Socket.IO
+              <strong>React</strong>, styled-components, Emotion (CSS in JS),
+              Three.js, react-spring, Socket.IO
             </p>
           </Description>
         </section>
         <section>
           <h3>design & software</h3>
           <Description>
-            <p>Figma, Gimp, Blender</p>
+            <p>Figma, Blender</p>
           </Description>
         </section>
         <section>
           <h3>tools & platforms</h3>
           <Description>
             <p>
-              Git, Next.js, Node, VSCode, Linux, Neovim, rome.tools,
-              eslint/prettier, Chrome DevTools
+              Git, <strong>Next.js</strong>, Node, VSCode, Linux, Neovim,
+              rome.tools, eslint/prettier, Chrome DevTools
             </p>
           </Description>
         </section>
@@ -62,7 +65,7 @@ export function Aside() {
       </section>
       <article>
         <h2>projects</h2>
-        <section>
+        {/* <section>
           <h3>portfolio</h3>
           <Description>
             <p>
@@ -70,7 +73,7 @@ export function Aside() {
               tools of programming.
             </p>
           </Description>
-        </section>
+        </section> */}
         <section>
           <h3>jutop</h3>
           <Description>
@@ -81,6 +84,12 @@ export function Aside() {
           </Description>
         </section>
         <section>
+          <h3>chot</h3>
+          <Description>
+            <p>Simple themed chat application for the web using sockets.</p>
+          </Description>
+        </section>
+        {/* <section>
           <h3>resume-template</h3>
           <Description>
             <p>
@@ -88,14 +97,7 @@ export function Aside() {
               template.
             </p>
           </Description>
-        </section>
-        {/* <Note>
-          <strong>NOTE</strong>
-          <p>
-            Some of my projects are still in development, and I plan to make
-            them open-source in the future.
-          </p>
-        </Note> */}
+        </section> */}
       </article>
     </aside>
   );

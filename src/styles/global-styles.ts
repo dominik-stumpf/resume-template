@@ -75,4 +75,9 @@ export const globalStyles = css({
     padding: '8px 16px',
     borderLeft: `2px solid ${theme.color.primary}`,
   },
+  ul: {
+    paddingLeft: 18,
+    color: theme.color.paragraph,
+    lineHeight: 1.5,
+  }
 });
