@@ -20,11 +20,11 @@ const ContactList = styled.ul(({ theme }) => ({
   gap: 16,
 }));
 const ContactItem = styled.li(({ theme }) => ({
-  listStyle: 'none',
   display: 'flex',
   gap: 8,
   alignItems: 'center',
   fontSize: `calc(${theme.fontBase} * (${theme.fontRatio} * 1px))`,
+  ':before': { display: 'none' },
 }));
 
 export function Header() {

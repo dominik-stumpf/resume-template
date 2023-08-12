@@ -76,8 +76,12 @@ export const globalStyles = css({
     borderLeft: `2px solid ${theme.color.primary}`,
   },
   ul: {
-    paddingLeft: 18,
     color: theme.color.paragraph,
     lineHeight: 1.5,
+    listStyle: 'none'
+  },
+  'ul li::before': {
+    content: '"-"',
+    padding: '0px 8px 0px 4px'
   }
 });

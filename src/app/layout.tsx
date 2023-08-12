@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'resume-template',
-  description: 'Generate resumes using this tool.',
+  description: 'Base resume style.',
 };
 
 export default function RootLayout({

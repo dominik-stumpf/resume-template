@@ -54,7 +54,7 @@ export function Experiences() {
         <Description>
           <p>
             Participated in EPAM Szeged's first Front-end recruit program and{' '}
-            <b>acquired the groundwork</b> needed in the web development
+            <em>acquired the groundwork</em> needed in the web development
             business.
           </p>
         </Description>
