@@ -3,8 +3,9 @@ import { Icon } from '@iconify-icon/react';
 
 const Subheader = styled.div(({ theme }) => ({
   fontSize: `calc(${theme.fontBase} * (${theme.fontRatio} * 2px))`,
-  fontWeight: 100,
+  fontWeight: 200,
   letterSpacing: -0.32,
+  textTransform: 'capitalize',
 }));
 
 const Box = styled.header({

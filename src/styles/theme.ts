@@ -1,11 +1,11 @@
 import { themeParser } from 'jutop';
 import { Fraunces, Space_Grotesk } from 'next/font/google';
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  style: ['normal'],
-  weight: 'variable',
-});
+// const spaceGrotesk = Space_Grotesk({
+//   subsets: ['latin'],
+//   style: ['normal'],
+//   weight: 'variable',
+// });
 
 const fraunces = Fraunces({
   subsets: ['latin'],
@@ -13,10 +13,10 @@ const fraunces = Fraunces({
   axes: ['SOFT', 'WONK', 'opsz'],
 });
 
-const activeFonts = { spaceGrotesk, fraunces } as const;
+const activeFonts = { fraunces } as const;
 
 export const rawTheme = {
-  sansSerifFont: activeFonts.spaceGrotesk.style.fontFamily,
+  // sansSerifFont: activeFonts.spaceGrotesk.style.fontFamily,
   serifFont: activeFonts.fraunces.style.fontFamily,
   fontBase: 13,
   fontRatio: 1.1,

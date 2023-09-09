@@ -16,7 +16,7 @@ export const globalStyles = css({
   },
   body: {
     fontSize: `calc(${theme.fontBase} * 1px)`,
-    fontFamily: theme.sansSerifFont,
+    fontFamily: theme.serifFont,
     '@media not print': {
       padding: 32,
     },
@@ -66,7 +66,13 @@ export const globalStyles = css({
   },
   p: {
     fontSize: `calc(${theme.fontBase} * 1px)`,
-    fontFamily: theme.sansSerifFont,
+    fontFamily: theme.serifFont,
+    fontVariationSettings: fontVariationSettingsHelper({
+      opticalSizing: 0,
+      weight: 350,
+      soft: 100,
+      wonk: 0,
+    }),
     lineHeight: 1.5,
     color: theme.color.paragraph,
     maxWidth: 380,
@@ -78,10 +84,16 @@ export const globalStyles = css({
   ul: {
     color: theme.color.paragraph,
     lineHeight: 1.5,
-    listStyle: 'none'
+    listStyle: 'none',
   },
   'ul li::before': {
     content: '"-"',
-    padding: '0px 8px 0px 4px'
-  }
+    padding: '0px 8px 0px 4px',
+  },
+  section: {
+    paddingLeft: 8,
+  },
+  '.indent-left': {
+    paddingLeft: 8,
+  },
 });

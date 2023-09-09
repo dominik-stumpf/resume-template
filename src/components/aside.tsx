@@ -54,15 +54,15 @@ export function Aside() {
           </Description>
         </section>
       </SkillArticle>
-      <section>
-        <h2>Interests</h2>
+      <h2>Interests</h2>
+      <div className='indent-left'>
         <Description>
           <p>
             Math, computer graphics, calisthenics, typography, software
             development and other bits and bobs :)
           </p>
         </Description>
-      </section>
+      </div>
       <article>
         <h2>projects</h2>
         {/* <section>
