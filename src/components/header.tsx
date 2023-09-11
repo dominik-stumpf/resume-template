@@ -49,8 +49,8 @@ export function Header() {
           github.com/dominik-stumpf
         </ContactItem>
         <ContactItem>
-          <Icon icon={'cib:codewars'} />
-          codewars.com/users/sdomi
+          <Icon icon={'cib:linkedin-in'} />
+          linkedin.com/in/dominik-stumpf
         </ContactItem>
       </ContactList>
     </Box>
