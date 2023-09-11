@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 
 const ArticleTitleDateBox = styled.div(({ theme }) => ({
   display: 'flex',
-  gap: 16,
+  gap: 8,
   alignItems: 'baseline',
   color: theme.color.dim,
 }));
@@ -47,7 +47,7 @@ export function ArticleTitleDate({
 
   return (
     <ArticleTitleDateBox>
-      <h3>{title}</h3>|
+      <h3>{title}</h3>//
       <div>
         <time dateTime={dateTimeStart}>{dateTimeStartText}</time>
         &nbsp;-&nbsp;

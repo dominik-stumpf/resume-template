@@ -44,9 +44,9 @@ export const globalStyles = css({
     color: theme.color.primary,
     margin: '16px 0 8px',
     letterSpacing: -1.0,
+    fontWeight: 500,
     fontVariationSettings: fontVariationSettingsHelper({
       opticalSizing: 32,
-      weight: 500,
       soft: 100,
       wonk: 1,
     }),
@@ -57,9 +57,9 @@ export const globalStyles = css({
     textTransform: 'none',
     margin: '16px 0 8px',
     letterSpacing: -0.5,
+    fontWeight: 400,
     fontVariationSettings: fontVariationSettingsHelper({
       opticalSizing: 32,
-      weight: 450,
       soft: 100,
       wonk: 1,
     }),
@@ -67,9 +67,9 @@ export const globalStyles = css({
   p: {
     fontSize: `calc(${theme.fontBase} * 1px)`,
     fontFamily: theme.serifFont,
+    fontWeight: 350,
     fontVariationSettings: fontVariationSettingsHelper({
       opticalSizing: 0,
-      weight: 350,
       soft: 100,
       wonk: 0,
     }),
@@ -95,5 +95,8 @@ export const globalStyles = css({
   },
   '.indent-left': {
     paddingLeft: 8,
+  },
+  strong: {
+    fontWeight: 500,
   },
 });
