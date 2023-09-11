@@ -34,22 +34,23 @@ export function Aside() {
           <Description>
             <p>
               <strong>React</strong>, styled-components, Emotion (CSS in JS),
-              Three.js, react-spring, Socket.IO
+              Three.js, react-spring, Socket.IO, tailwindcss, Prisma, Express,{' '}
+              <strong>Next.js</strong>
             </p>
           </Description>
         </section>
         <section>
           <h3>design & software</h3>
           <Description>
-            <p>Figma, Blender</p>
+            <p>Figma</p>
           </Description>
         </section>
         <section>
           <h3>tools & platforms</h3>
           <Description>
             <p>
-              Git, <strong>Next.js</strong>, Node, VSCode, Linux, Neovim,
-              rome.tools, eslint/prettier, Chrome DevTools
+              Git, Node, VSCode, Linux, Neovim, rome.tools, eslint/prettier,
+              Chrome DevTools
             </p>
           </Description>
         </section>
@@ -74,7 +75,7 @@ export function Aside() {
             </p>
           </Description>
         </section> */}
-        <section>
+        {/* <section>
           <h3>jutop</h3>
           <Description>
             <p>
@@ -82,11 +83,13 @@ export function Aside() {
               regular theme object Emotion provides.
             </p>
           </Description>
-        </section>
+        </section> */}
         <section>
           <h3>chot</h3>
           <Description>
-            <p>Simple themed chat application for the web using sockets.</p>
+            <p>
+              Simple themed public chat application for the web using sockets.
+            </p>
           </Description>
         </section>
         {/* <section>
