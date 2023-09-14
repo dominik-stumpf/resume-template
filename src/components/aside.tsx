@@ -1,4 +1,5 @@
 import { Description } from './description';
+import { Repos } from './repos';
 import styled from '@emotion/styled';
 
 const SkillArticle = styled.article({
@@ -9,6 +10,8 @@ const SkillArticle = styled.article({
 
 const Note = styled.blockquote({
   marginTop: 16,
+  color: '#45454',
+  marginLeft: 8,
   strong: {
     display: 'inline-block',
     marginBottom: 8,
@@ -50,7 +53,7 @@ export function Aside() {
           <Description>
             <p>
               Git, Node, VSCode, Linux, Neovim, rome.tools, eslint/prettier,
-              Chrome DevTools
+              Chrome DevTools, Markdown
             </p>
           </Description>
         </section>
@@ -59,48 +62,17 @@ export function Aside() {
       <div className='indent-left'>
         <Description>
           <p>
-            Math, computer graphics, calisthenics, typography, software
-            development and other bits and bobs :)
+            Math, computer graphics, calisthenics, typography, back-end,
+            front-end, game development and other bits and bobs :)
           </p>
         </Description>
       </div>
       <article>
         <h2>projects</h2>
-        {/* <section>
-          <h3>portfolio</h3>
-          <Description>
-            <p>
-              An interactive website displaying my journey and passion using the
-              tools of programming.
-            </p>
-          </Description>
-        </section> */}
-        {/* <section>
-          <h3>jutop</h3>
-          <Description>
-            <p>
-              An Emotion extension for making a CSS compatible object out of the
-              regular theme object Emotion provides.
-            </p>
-          </Description>
-        </section> */}
         <section>
-          <h3>chot</h3>
-          <Description>
-            <p>
-              Simple themed public chat application for the web using sockets.
-            </p>
-          </Description>
+          <Repos />
         </section>
-        {/* <section>
-          <h3>resume-template</h3>
-          <Description>
-            <p>
-              Extensible, print friendly and somewhat responsive resume
-              template.
-            </p>
-          </Description>
-        </section> */}
+        <Note>See them on my Github!</Note>
       </article>
     </aside>
   );
