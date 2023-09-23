@@ -1,4 +1,3 @@
-import { Description } from './description';
 import { RepoTemplateType } from './repo-template';
 import { Fragment } from 'react';
 
@@ -17,9 +16,7 @@ export async function Repos() {
   return filteredRepos.map((repo) => (
     <Fragment key={repo.name}>
       <h3>{repo.name}</h3>
-      <Description>
-        <p>{repo.description}</p>
-      </Description>
+      <p>{repo.description}</p>
     </Fragment>
   ));
 }
