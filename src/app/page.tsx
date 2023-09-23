@@ -1,3 +1,3 @@
 export default function Page() {
-  return <>project reset</>;
+  return <div className='text-forest-green'>project reset</div>;
 }

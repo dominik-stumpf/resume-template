@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: #00;
+  --white: #ff;
+  --forest-green: #439345;
+  --dim: #df;
+  --body: #33;
+}
