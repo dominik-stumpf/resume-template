@@ -10,7 +10,7 @@ export function ListSection({
     <section className='flex flex-col gap-3 py-3 border-b border-neutral-200'>
       <div className='flex items-center justify-between'>
         <Title>{title}</Title>
-        <div className='text-black text-[10px] font-light  underline'>
+        <div className='text-xs font-light text-black underline'>
           April, 2023 - Present
         </div>
       </div>
