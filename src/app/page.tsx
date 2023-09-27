@@ -2,6 +2,7 @@ import { Body } from '../components/body';
 import { Header } from '../components/header';
 import { ListSection } from '../components/list-section/list-section';
 import { ListSectionProps } from '../components/list-section/list-section-types';
+import Projects from '../components/projects/projects';
 import { resumeData } from './resume-data';
 
 export default function Page() {
@@ -28,8 +29,8 @@ export default function Page() {
           <div className='flex flex-col gap-2'>
             <Header>Skills & Knowledge</Header>
             <div className='pl-1.5'>
-              {resumeData.skills.map(({ children, date }) => (
-                <ListSection>{children}</ListSection>
+              {resumeData.skills.map(({ children }) => (
+                <ListSection tight>{children}</ListSection>
               ))}
             </div>
             <Header>Interests</Header>
@@ -38,6 +39,7 @@ export default function Page() {
             </div>
             <Header>Projects</Header>
             <div className='pl-1.5'>
+              <Projects />
               <div className='flex flex-col justify-center pl-2 border-l-2 border-green-600'>
                 <Body>See them on my GitHub!</Body>
               </div>

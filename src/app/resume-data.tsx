@@ -5,6 +5,7 @@ interface DataProps {
   experiences: ListSectionProps[];
   skills: ListSectionProps[];
   interests: ReactNode;
+  projects: string[];
 }
 
 export const resumeData: DataProps = {
@@ -121,4 +122,5 @@ export const resumeData: DataProps = {
       development and other bits and bobs :)
     </>
   ),
+  projects: ['astral-playland', 'chot'],
 };

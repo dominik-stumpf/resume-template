@@ -13,6 +13,9 @@
       "correctness": {
         "noUnusedVariables": "off"
       },
+      "style": {
+        "noImplicitBoolean": "off"
+      },
       "nursery": {
         "all": true,
         "noConsoleLog": "off"
