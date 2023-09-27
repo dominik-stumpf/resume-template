@@ -18,7 +18,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "@iconify-icon/react": "^1.0.8",
+    "@iconify/react": "^4.1.1",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.30",
     "rome": "12.1.3",

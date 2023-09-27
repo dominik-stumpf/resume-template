@@ -1,5 +1,6 @@
 import { BackgroundGraphics } from '../components/background-graphics/background-graphics';
 import { Body } from '../components/body';
+import { Contact } from '../components/contact/contact';
 import { Header } from '../components/header';
 import { ListSection } from '../components/list-section/list-section';
 import Projects from '../components/projects/projects';
@@ -10,6 +11,7 @@ export default function Page() {
     <div className='grid h-full'>
       <div className='w-[210mm] h-[297mm] outline outline-dim place-self-center font-soft-serif px-6 py-8 overflow-hidden relative'>
         <BackgroundGraphics />
+        <Contact />
         <header className='mb-5 tracking-tighter'>
           <h1 className='mb-1 text-5xl font-bold text-forest-green'>
             Dominik Stumpf
@@ -18,7 +20,7 @@ export default function Page() {
             software engineer & talented individual
           </div>
         </header>
-        <div className='grid grid-cols-[1fr,0.9fr] gap-8'>
+        <div className='grid grid-cols-[1fr,0.85fr] gap-8 pr-4'>
           <main className='flex flex-col gap-2'>
             <Header>Experiences</Header>
             <div className='pl-1.5 flex-col justify-start items-start flex'>
