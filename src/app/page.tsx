@@ -8,25 +8,25 @@ import { resumeData } from './resume-data';
 export default function Page() {
   return (
     <div className='grid h-full'>
-      <div className='w-[210mm] h-[297mm] relative bg-white outline outline-dim place-self-center font-soft-serif px-6 py-8'>
-        <div className='inline-flex flex-col items-start justify-start mb-5 tracking-tighter'>
+      <div className='w-[210mm] h-[297mm] relative bg-white outline outline-dim place-self-center font-soft-serif px-6 py-8 overflow-hidden'>
+        <header className='inline-flex flex-col items-start justify-start mb-5 tracking-tighter'>
           <h1 className='mb-1 text-5xl font-bold text-forest-green'>
             Dominik Stumpf
           </h1>
           <div className='text-2xl font-thin text-black capitalize'>
             software engineer & talented individual
           </div>
-        </div>
+        </header>
         <div className='grid grid-cols-[1fr,0.9fr] gap-8'>
-          <div className='flex flex-col gap-2'>
+          <main className='flex flex-col gap-2'>
             <Header>Experiences</Header>
             <div className='pl-1.5 flex-col justify-start items-start flex'>
               {resumeData.experiences.map(({ children, date }) => (
                 <ListSection date={date}>{children}</ListSection>
               ))}
             </div>
-          </div>
-          <div className='flex flex-col gap-2'>
+          </main>
+          <aside className='flex flex-col gap-2'>
             <Header>Skills & Knowledge</Header>
             <div className='pl-1.5'>
               {resumeData.skills.map(({ children }) => (
@@ -44,7 +44,7 @@ export default function Page() {
                 <Body>See them on my GitHub!</Body>
               </div>
             </div>
-          </div>
+          </aside>
         </div>
       </div>
     </div>
