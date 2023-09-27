@@ -22,6 +22,9 @@ export function BackgroundGraphics() {
           ’
         </div>
       </div>
+      <div className='absolute text-base italic tracking-tight text-black lowercase bottom-1 right-2 font-display-italic'>
+        ds
+      </div>
     </div>
   );
 }
