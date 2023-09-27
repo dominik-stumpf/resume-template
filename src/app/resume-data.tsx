@@ -1,14 +1,14 @@
 import { ListSectionProps } from '../components/list-section/list-section-types';
 import { ReactNode } from 'react';
 
-interface DataProps {
+interface ResumeDataProps {
   experiences: ListSectionProps[];
   skills: ListSectionProps[];
   interests: ReactNode;
   projects: string[];
 }
 
-export const resumeData: DataProps = {
+export const resumeData: ResumeDataProps = {
   experiences: [
     {
       children: {
