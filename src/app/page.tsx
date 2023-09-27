@@ -102,14 +102,7 @@ export default function Page() {
             </div>
           </div>
           <div className='flex flex-col gap-2'>
-            <div>
-              <span className='text-2xl font-semibold text-green-600 capitalize'>
-                Skills & Knowledge{' '}
-              </span>
-              <span className='text-2xl font-semibold capitalize text-zinc-800'>
-                .
-              </span>
-            </div>
+            <Title>Skills & Knowledge</Title>
             <div className='pl-1.5 flex-col justify-start items-start flex'>
               <div className='h-[67px] py-1.5 border-b flex-col justify-start items-start gap-1.5 flex'>
                 <div className='self-stretch text-xs font-normal text-black '>
@@ -146,28 +139,14 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div>
-              <span className='text-2xl font-semibold text-green-600 capitalize'>
-                Interests{' '}
-              </span>
-              <span className='text-2xl font-semibold capitalize text-zinc-800'>
-                .
-              </span>
-            </div>
+            <Title>Interests</Title>
             <div className='self-stretch pl-1.5 justify-start items-start gap-2.5 inline-flex'>
               <div className='text-xs font-light leading-none grow shrink basis-0 text-zinc-800'>
                 Math, computer graphics, calisthenics, Rustlang, typography,
                 software development and other bits and bobs :)
               </div>
             </div>
-            <div>
-              <span className='text-2xl font-semibold text-green-600 capitalize'>
-                Projects{' '}
-              </span>
-              <span className='text-2xl font-semibold capitalize text-zinc-800'>
-                .
-              </span>
-            </div>
+            <Title>Projects</Title>
             <div className='self-stretch h-[117px] pl-1.5 flex-col justify-start items-start flex'>
               <div className='self-stretch h-[50px] py-1.5 border-b flex-col justify-start items-start gap-1.5 flex'>
                 <div className='self-stretch text-xs font-normal text-black '>
