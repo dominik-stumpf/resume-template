@@ -1,7 +1,6 @@
 import { Body } from '../components/body';
 import { Header } from '../components/header';
 import { ListSection } from '../components/list-section/list-section';
-import { ListSectionProps } from '../components/list-section/list-section-types';
 import Projects from '../components/projects/projects';
 import { resumeData } from './resume-data';
 
