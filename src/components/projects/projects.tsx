@@ -8,7 +8,7 @@ async function fetchRepositories() {
   const res = await fetch(api, { cache: 'force-cache' });
 
   if (!res.ok) {
-    throw new Error('Failed to fetch data');
+    throw new Error('Failed to fetch repositories');
   }
 
   return res.json() as Promise<GitHubRepository[]>;
