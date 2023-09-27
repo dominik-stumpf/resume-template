@@ -47,19 +47,19 @@ export function useDateRange({ dateRange }: DateRangeProps) {
   let dateTimeEndText: string;
 
   const isPresent = dateRange.length === 1;
-  let localDateRange;
+  // let localDateRange;
 
   if (isPresent) {
-    localDateRange = dateRange[0] as Date;
-    dateTimeStart = localDateRange.toISOString();
-    dateTimeEnd = currentDate.toISOString();
+    const localDateRange = dateRange[0];
+    // dateTimeStart = localDateRange.toISOString();
+    // dateTimeEnd = currentDate.toISOString();
     dateTimeStartText = formatDateToMonthYear(localDateRange);
     dateTimeEndText = 'Present';
   } else {
-    localDateRange = dateRange as [Date, Date];
-    [dateTimeStart, dateTimeEnd] = localDateRange.map((date) =>
-      date.toISOString(),
-    );
+    const localDateRange = dateRange;
+    // [dateTimeStart, dateTimeEnd] = localDateRange.map((date) =>
+    //   date.toISOString(),
+    // );
     [dateTimeStartText, dateTimeEndText] =
       formatDateRangeToMonthYear(dateRange);
   }
