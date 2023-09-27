@@ -1,8 +1,7 @@
-export function Title({ children }: { children: string }) {
+import { ReactNode } from 'react';
+
+export function Title({ children }: { children: ReactNode }) {
   return (
-    <div className='text-2xl font-semibold text-green-600 capitalize'>
-      {`${children} `}
-      <span className='text-zinc-800'>.</span>
-    </div>
+    <h3 className='text-xs font-normal text-black font-title'>{children}</h3>
   );
 }

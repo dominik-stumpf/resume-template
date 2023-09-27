@@ -1,36 +1,52 @@
-import { Title } from '../components/title';
+import { Header } from '../components/header';
+import { ListSection } from '../components/list-section/list-section';
+import { ListSectionProps } from '../components/list-section/list-section-types';
+
+interface DataProps {
+  experiences: ListSectionProps[];
+}
+
+const data = {
+  experiences: [
+    {
+      children: {
+        title: 'WebGL, Three.js',
+        paragraph:
+          'Started learning the OpenGL shading language and 3D graphics for the web.',
+      },
+      date: { value: new Date(2023, 3, 14), isPresent: true },
+    },
+    {
+      children: {
+        title: 'WebGL, Three.js',
+        paragraph:
+          'Started learning the OpenGL shading language and 3D graphics for the web.',
+      },
+      date: { value: new Date(2023, 3, 14), isPresent: true },
+    },
+  ],
+};
 
 export default function Page() {
   return (
     <div className='grid h-full'>
       <div className='w-[210mm] h-[297mm] relative bg-white outline outline-dim place-self-center font-soft-serif px-6 py-8'>
         <div className='inline-flex flex-col items-start justify-start mb-5'>
-          <div className='text-5xl font-bold text-green-600'>
+          <h1 className='mb-1 text-5xl font-bold text-green-600'>
             Dominik Stumpf
-          </div>
+          </h1>
           <div className='text-2xl font-thin text-black capitalize'>
             software engineer & talented individual
           </div>
         </div>
-        <div className='grid grid-cols-[1fr,0.8fr] gap-8'>
+        <div className='grid grid-cols-[1fr,0.9fr] gap-8'>
           <div className='flex flex-col gap-2'>
-            <Title>Experiences</Title>
+            <Header>Experiences</Header>
             <div className='pl-1.5 flex-col justify-start items-start flex'>
-              <div className='flex flex-col items-start justify-start gap-3 py-3 border-b border-neutral-200'>
-                <div className='inline-flex items-center self-stretch justify-between'>
-                  <div className='text-xs font-normal text-black '>
-                    WebGL, Three.js
-                  </div>
-                  <div className='text-black text-[10px] font-light  underline'>
-                    April, 2023 - Present
-                  </div>
-                </div>
-                <div className='w-[257px] text-zinc-800 text-xs font-light  leading-none'>
-                  Started learning the OpenGL shading language and 3D graphics
-                  for the web.
-                </div>
-              </div>
-              <div className='flex flex-col items-start justify-start gap-3 py-3 border-b border-neutral-200'>
+              {data.experiences.map(({ children, date }) => (
+                <ListSection date={date}>{children}</ListSection>
+              ))}
+              {/* <div className='flex flex-col items-start justify-start gap-3 py-3 border-b border-neutral-200'>
                 <div className='inline-flex items-center self-stretch justify-between'>
                   <div className='text-xs font-normal text-black '>
                     React, Typescript
@@ -98,11 +114,11 @@ export default function Page() {
                   a computer works and through the python ecosystem I got
                   motivated to start making my own projects.
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className='flex flex-col gap-2'>
-            <Title>Skills & Knowledge</Title>
+            <Header>Skills & Knowledge</Header>
             <div className='pl-1.5 flex-col justify-start items-start flex'>
               <div className='h-[67px] py-1.5 border-b flex-col justify-start items-start gap-1.5 flex'>
                 <div className='self-stretch text-xs font-normal text-black '>
@@ -139,14 +155,14 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <Title>Interests</Title>
+            <Header>Interests</Header>
             <div className='self-stretch pl-1.5 justify-start items-start gap-2.5 inline-flex'>
               <div className='text-xs font-light leading-none grow shrink basis-0 text-zinc-800'>
                 Math, computer graphics, calisthenics, Rustlang, typography,
                 software development and other bits and bobs :)
               </div>
             </div>
-            <Title>Projects</Title>
+            <Header>Projects</Header>
             <div className='self-stretch h-[117px] pl-1.5 flex-col justify-start items-start flex'>
               <div className='self-stretch h-[50px] py-1.5 border-b flex-col justify-start items-start gap-1.5 flex'>
                 <div className='self-stretch text-xs font-normal text-black '>

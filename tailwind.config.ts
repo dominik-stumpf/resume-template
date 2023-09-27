@@ -34,6 +34,17 @@ export default {
           }),
         },
       ],
+      title: [
+        'var(--serif), serif',
+        {
+          fontVariationSettings: fontVariationSettingsHelper({
+            weight: 400,
+            opticalSizing: 64,
+            soft: 100,
+            wonk: 1,
+          }),
+        },
+      ],
       body: [
         'var(--serif), serif',
         {
