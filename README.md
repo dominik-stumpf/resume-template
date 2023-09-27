@@ -1,6 +1,6 @@
 # resume-template
 
-Current styling and setup used for my resume. The idea is to dynamically generate the resume pdf with various themes using React, but it's much more efficient to export it from a Figma sketch. For that reasons the *project is put to a halt.*
+Current styling and setup used for my resume.
 
 [Current figma file for my latest design.](https://www.figma.com/file/oKNCZ67CngL4Zzfa53rZJV/resume?type=design&node-id=9%3A1014&mode=design&t=v4vFB6wD5LKwMLKN-1)
 
@@ -26,7 +26,7 @@ Current styling and setup used for my resume. The idea is to dynamically generat
  * don't use too many colors or font sizes
  * prefer truncating text over condensing text
  * high contrast
- * limit background colors
+ * limit background graphics
 
 ## `__future__`
 
