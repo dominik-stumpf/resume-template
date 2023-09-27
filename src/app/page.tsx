@@ -40,7 +40,7 @@ export default function Page() {
             <Header>Projects</Header>
             <div className='pl-1.5'>
               <Projects />
-              <div className='flex flex-col justify-center pl-2 border-l-2 border-green-600'>
+              <div className='flex flex-col justify-center pl-2 mt-2 border-l-2 border-green-600'>
                 <Body>See them on my GitHub!</Body>
               </div>
             </div>
