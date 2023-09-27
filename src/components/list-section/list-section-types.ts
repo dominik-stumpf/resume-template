@@ -5,5 +5,5 @@ export interface ListSectionProps {
     title: ReactNode;
     paragraph: ReactNode;
   };
-  date?: { value: Date; isPresent: boolean };
+  date?: { value: Date | [Date, Date]; isPresent: boolean };
 }
