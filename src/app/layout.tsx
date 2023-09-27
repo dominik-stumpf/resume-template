@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={fraunces.variable}>{children}</body>
+      <body className={`${fraunces.variable} bg-white`}>{children}</body>
     </html>
   );
 }
