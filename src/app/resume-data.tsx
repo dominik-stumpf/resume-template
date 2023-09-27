@@ -92,7 +92,12 @@ export const resumeData: DataProps = {
     {
       children: {
         title: 'Libraries',
-        paragraph: <>HTML, CSS, SCSS, Javascript, Typescript, C#, Python</>,
+        paragraph: (
+          <>
+            React, styled-components, Emotion, Three.js, react-spring,
+            Socket.IO, tailwindcss, Prisma, Express, Next.js, r3f
+          </>
+        ),
       },
     },
     {
