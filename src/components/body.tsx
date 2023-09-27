@@ -5,7 +5,7 @@ export function Body({
   isParagraph = false,
 }: { children: ReactNode; isParagraph?: boolean }) {
   return (
-    <div className='text-xs font-light leading-none text-zinc-80 font-body'>
+    <div className='text-xs font-light leading-snug text-zinc-80 font-body'>
       {children}
     </div>
   );
