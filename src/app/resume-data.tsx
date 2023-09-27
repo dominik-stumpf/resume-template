@@ -1,7 +1,10 @@
 import { ListSectionProps } from '../components/list-section/list-section-types';
+import { ReactNode } from 'react';
 
 interface DataProps {
   experiences: ListSectionProps[];
+  skills: ListSectionProps[];
+  interests: ReactNode;
 }
 
 export const resumeData: DataProps = {
@@ -81,4 +84,41 @@ export const resumeData: DataProps = {
       date: { value: [new Date(2017, 9), new Date(2020, 2)], isPresent: false },
     },
   ],
+  skills: [
+    {
+      children: {
+        title: 'Programming Languages & Relations',
+        paragraph: <>HTML, CSS, SCSS, Javascript, Typescript, C#, Python</>,
+      },
+    },
+    {
+      children: {
+        title: 'Libraries',
+        paragraph: <>HTML, CSS, SCSS, Javascript, Typescript, C#, Python</>,
+      },
+    },
+    {
+      children: {
+        title: 'Design & Software',
+        paragraph: <>Figma, Inkscape, Blender</>,
+      },
+    },
+    {
+      children: {
+        title: 'Tools & Platforms',
+        paragraph: (
+          <>
+            Git, Node, VSCode, Linux, Neovim, rome.tools, eslint/prettier,
+            Chrome DevTools, Markdown
+          </>
+        ),
+      },
+    },
+  ],
+  interests: (
+    <>
+      Math, computer graphics, calisthenics, Rustlang, typography, software
+      development and other bits and bobs :)
+    </>
+  ),
 };
