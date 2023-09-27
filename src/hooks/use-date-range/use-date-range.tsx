@@ -39,27 +39,15 @@ export function formatDateRangeToMonthYear(
 }
 
 export function useDateRange({ dateRange }: DateRangeProps) {
-  const currentDate = new Date();
-
-  let dateTimeStart: string;
-  let dateTimeEnd: string;
   let dateTimeStartText: string;
   let dateTimeEndText: string;
 
   const isPresent = dateRange.length === 1;
-  // let localDateRange;
 
   if (isPresent) {
-    const localDateRange = dateRange[0];
-    // dateTimeStart = localDateRange.toISOString();
-    // dateTimeEnd = currentDate.toISOString();
-    dateTimeStartText = formatDateToMonthYear(localDateRange);
+    dateTimeStartText = formatDateToMonthYear(dateRange[0]);
     dateTimeEndText = 'Present';
   } else {
-    const localDateRange = dateRange;
-    // [dateTimeStart, dateTimeEnd] = localDateRange.map((date) =>
-    //   date.toISOString(),
-    // );
     [dateTimeStartText, dateTimeEndText] =
       formatDateRangeToMonthYear(dateRange);
   }
