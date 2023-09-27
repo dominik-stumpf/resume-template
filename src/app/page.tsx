@@ -21,8 +21,13 @@ export default function Page() {
           <main className='flex flex-col gap-2'>
             <Header>Experiences</Header>
             <div className='pl-1.5 flex-col justify-start items-start flex'>
-              {resumeData.experiences.map(({ children, date }) => (
-                <ListSection date={date}>{children}</ListSection>
+              {resumeData.experiences.map(({ children, date }, index) => (
+                <ListSection
+                  date={date}
+                  underline={index !== resumeData.experiences.length - 1}
+                >
+                  {children}
+                </ListSection>
               ))}
             </div>
           </main>

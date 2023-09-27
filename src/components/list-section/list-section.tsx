@@ -6,14 +6,13 @@ export function ListSection({
   children: { paragraph, title },
   date,
   tight = false,
+  underline = false,
 }: ListSectionProps) {
   return (
     <section
-      className={`flex flex-col ${
-        tight
-          ? 'gap-1.5 py-1.5'
-          : 'gap-3 py-3 border-b border-dashed border-dim'
-      }`}
+      className={`flex flex-col ${tight ? 'gap-1.5 py-1.5' : 'gap-3 py-3'}
+        ${underline && 'border-b border-dashed border-dim'}
+      `}
     >
       <div className='flex items-center justify-between'>
         <Title>{title}</Title>

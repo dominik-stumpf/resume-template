@@ -7,4 +7,5 @@ export interface ListSectionProps {
   };
   date?: { value: Date | [Date, Date]; isPresent: boolean };
   tight?: boolean;
+  underline?: boolean;
 }
