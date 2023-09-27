@@ -1,9 +1,6 @@
 # resume-template
 
 Current styling and setup used for my resume.
-
-[Current figma file for my latest design.](https://www.figma.com/file/oKNCZ67CngL4Zzfa53rZJV/resume?type=design&node-id=9%3A1014&mode=design&t=v4vFB6wD5LKwMLKN-1)
-
 ## Theme
  ### Typeface
  The all wonderful [Fraunces](https://fraunces.undercase.xyz/)
