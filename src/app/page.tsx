@@ -1,3 +1,4 @@
+import { Body } from '../components/body';
 import { Header } from '../components/header';
 import { ListSection } from '../components/list-section/list-section';
 import { ListSectionProps } from '../components/list-section/list-section-types';
@@ -26,72 +27,19 @@ export default function Page() {
           </div>
           <div className='flex flex-col gap-2'>
             <Header>Skills & Knowledge</Header>
-            <div className='pl-1.5 flex-col justify-start items-start flex'>
-              <div className='h-[67px] py-1.5 border-b flex-col justify-start items-start gap-1.5 flex'>
-                <div className='self-stretch text-xs font-normal text-black '>
-                  Programming Languages & Relations
-                </div>
-                <div className='self-stretch text-xs font-light leading-none text-body'>
-                  HTML, CSS, SCSS, Javascript, Typescript, C#, Python
-                </div>
-              </div>
-              <div className='h-[101px] py-1.5 border-b flex-col justify-start items-start gap-1.5 flex'>
-                <div className='self-stretch text-xs font-normal text-black '>
-                  Libraries
-                </div>
-                <div className='self-stretch text-xs font-light leading-none text-body'>
-                  React, styled-components, Emotion, Three.js, react-spring,
-                  Socket.IO, tailwindcss, Prisma, Express, Next.js, r3f
-                </div>
-              </div>
-              <div className='h-[50px] py-1.5 border-b flex-col justify-start items-start gap-1.5 flex'>
-                <div className='self-stretch text-xs font-normal text-black '>
-                  Design & Software
-                </div>
-                <div className='self-stretch text-xs font-light leading-none text-body'>
-                  Figma, Inkscape, Blender
-                </div>
-              </div>
-              <div className='h-[84px] py-1.5 border-b flex-col justify-start items-start gap-1.5 flex'>
-                <div className='self-stretch text-xs font-normal text-black '>
-                  Tools & Platforms
-                </div>
-                <div className='self-stretch text-xs font-light leading-none text-body'>
-                  Git, Node, VSCode, Linux, Neovim, rome.tools, eslint/prettier,
-                  Chrome DevTools, Markdown
-                </div>
-              </div>
+            <div className='pl-1.5'>
+              {resumeData.skills.map(({ children, date }) => (
+                <ListSection>{children}</ListSection>
+              ))}
             </div>
             <Header>Interests</Header>
-            <div className='self-stretch pl-1.5 justify-start items-start gap-2.5 inline-flex'>
-              <div className='text-xs font-light leading-none grow shrink basis-0 text-body'>
-                Math, computer graphics, calisthenics, Rustlang, typography,
-                software development and other bits and bobs :)
-              </div>
+            <div className='pl-1.5'>
+              <Body>{resumeData.interests}</Body>
             </div>
             <Header>Projects</Header>
-            <div className='self-stretch h-[117px] pl-1.5 flex-col justify-start items-start flex'>
-              <div className='self-stretch h-[50px] py-1.5 border-b flex-col justify-start items-start gap-1.5 flex'>
-                <div className='self-stretch text-xs font-normal text-black '>
-                  astral playland
-                </div>
-                <div className='self-stretch text-xs font-light leading-none text-body'>
-                  three.js app showcasing the universe
-                </div>
-              </div>
-              <div className='self-stretch h-[67px] py-1.5 border-b flex-col justify-start items-start gap-1.5 flex'>
-                <div className='self-stretch text-xs font-normal text-black '>
-                  chot
-                </div>
-                <div className='self-stretch text-xs font-light leading-none text-body'>
-                  Minimalist themed public chat application for the web using
-                  sockets.
-                </div>
-              </div>
-            </div>
-            <div className='w-56 pl-2 border-l-2 border-green-600 justify-center items-center gap-2.5 inline-flex'>
-              <div className='text-xs font-light leading-none grow shrink basis-0 text-body'>
-                See them on my GitHub!
+            <div className='pl-1.5'>
+              <div className='flex flex-col justify-center pl-2 border-l-2 border-green-600'>
+                <Body>See them on my GitHub!</Body>
               </div>
             </div>
           </div>
