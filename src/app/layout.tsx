@@ -5,6 +5,15 @@ export const metadata: Metadata = {
   description: 'resume template',
 };
 
+import { Fraunces } from 'next/font/google';
+
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  style: ['normal', 'italic'],
+  axes: ['SOFT', 'WONK', 'opsz'],
+  variable: '--serif',
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -12,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body className={fraunces.variable}>{children}</body>
     </html>
   );
 }

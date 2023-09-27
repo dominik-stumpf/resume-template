@@ -3,9 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --black: #00;
-  --white: #ff;
+  --black: #000;
+  --white: #fff;
   --forest-green: #439345;
-  --dim: #df;
-  --body: #33;
+  --dim: #dfdfdf;
+  --body: #333;
+  font-size: 22px;
+}
+
+:root, body {
+  height: 100%;
 }
