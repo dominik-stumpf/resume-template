@@ -31,7 +31,7 @@ export default function Page() {
   return (
     <div className='grid h-full'>
       <div className='w-[210mm] h-[297mm] relative bg-white outline outline-dim place-self-center font-soft-serif px-6 py-8'>
-        <div className='inline-flex flex-col items-start justify-start mb-5'>
+        <div className='inline-flex flex-col items-start justify-start mb-5 tracking-tighter'>
           <h1 className='mb-1 text-5xl font-bold text-green-600'>
             Dominik Stumpf
           </h1>
