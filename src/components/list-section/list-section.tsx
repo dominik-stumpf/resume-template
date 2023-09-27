@@ -5,7 +5,7 @@ import { useDateRange } from '@/src/hooks/use-date-range/use-date-range';
 
 export function ListSection({
   children: { paragraph, title },
-  date: dateRange,
+  dateRange,
   tight = false,
   underline = false,
 }: ListSectionProps) {

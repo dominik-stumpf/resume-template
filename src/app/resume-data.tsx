@@ -16,7 +16,7 @@ export const resumeData: DataProps = {
         paragraph:
           'Started learning the OpenGL shading language and 3D graphics for the web.',
       },
-      date: [new Date(2023, 3, 14)],
+      dateRange: [new Date(2023, 3, 14)],
     },
     {
       children: {
@@ -28,7 +28,7 @@ export const resumeData: DataProps = {
           </>
         ),
       },
-      date: [new Date(2021, 5)],
+      dateRange: [new Date(2021, 5)],
     },
     {
       children: {
@@ -41,7 +41,7 @@ export const resumeData: DataProps = {
           </>
         ),
       },
-      date: [new Date(2023, 3, 14)],
+      dateRange: [new Date(2023, 3, 14)],
     },
     {
       children: {
@@ -54,7 +54,7 @@ export const resumeData: DataProps = {
           </>
         ),
       },
-      date: [new Date(2021, 2), new Date(2021, 5)],
+      dateRange: [new Date(2021, 2), new Date(2021, 5)],
     },
     {
       children: {
@@ -66,7 +66,7 @@ export const resumeData: DataProps = {
           </>
         ),
       },
-      date: [new Date(2020, 11), new Date(2021, 2)],
+      dateRange: [new Date(2020, 11), new Date(2021, 2)],
     },
     {
       children: {
@@ -79,7 +79,7 @@ export const resumeData: DataProps = {
           </>
         ),
       },
-      date: [new Date(2017, 9), new Date(2020, 2)],
+      dateRange: [new Date(2017, 9), new Date(2020, 2)],
     },
   ],
   skills: [
