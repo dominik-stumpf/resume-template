@@ -41,7 +41,7 @@ export const resumeData: ResumeDataProps = {
           </>
         ),
       },
-      dateRange: [new Date(2023, 3, 14)],
+      dateRange: [new Date(2021, 5)],
     },
     {
       children: {
