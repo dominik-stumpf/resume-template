@@ -38,7 +38,7 @@ export function BackgroundGraphics() {
       </div>
       <div
         className='absolute bottom-0 italic text-transparent rotate-90 translate-x-1/2 -translate-y-32 text-8xl -right-1 font-display-italic'
-        style={{ WebkitTextStroke: '1px var(--dim)' }}
+        style={{ WebkitTextStroke: '1.5px var(--dim)' }}
       >
         curriculum vitae
       </div>
