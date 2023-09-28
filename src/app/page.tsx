@@ -20,7 +20,7 @@ export default function Page() {
             software engineer & talented individual
           </div>
         </header>
-        <div className='grid grid-cols-[1fr,0.85fr] gap-8 pr-4'>
+        <div className='grid grid-cols-[1fr,0.9fr] gap-8 pr-4'>
           <main className='flex flex-col gap-2'>
             <Header>Experiences</Header>
             <div className='pl-1.5 flex-col justify-start items-start flex'>
@@ -50,7 +50,7 @@ export default function Page() {
             <Header>Projects</Header>
             <div className='pl-1.5'>
               <Projects />
-              <div className='flex flex-col justify-center pl-2 mt-2 border-l-2 border-green-600'>
+              <div className='flex flex-col justify-center pl-2 mt-2 border-l-2 border-forest-green'>
                 <Body>See them on my GitHub!</Body>
               </div>
             </div>

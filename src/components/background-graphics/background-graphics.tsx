@@ -7,6 +7,20 @@ export function BackgroundGraphics() {
       <div className='-translate-y-20 -translate-x-1/4'>software engineer</div>
       <div className='absolute right-0 translate-x-4 top-6'>*</div>
       <div className='absolute right-0 translate-x-1/2 top-20'>1</div>
+      <div className='absolute w-[98%] right-0 top-[5rem]'>
+        <svg
+          viewBox='0 0 584 6'
+          fill='none'
+          xmlns='http://www.w3.org/2000/svg'
+          // className='absolute right-0 top-[5rem]'
+        >
+          <title>display horizontal rule</title>
+          <path
+            d='M0.11322 2.99995L3 5.8867L5.88678 2.99995L3 0.113198L0.11322 2.99995ZM584 2.5L3 2.49995L3 3.49995L584 3.5L584 2.5Z'
+            className='fill-dim'
+          />
+        </svg>
+      </div>
 
       <div className='italic font-display-italic '>
         <div className='absolute bottom-0 left-0 -translate-x-5 translate-y-5'>
