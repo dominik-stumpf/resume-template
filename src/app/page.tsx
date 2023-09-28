@@ -24,16 +24,24 @@ export default function Page() {
           <main className='flex flex-col gap-2'>
             <Header>Experiences</Header>
             <div className='pl-1.5 flex-col justify-start items-start flex'>
-              {resumeData.experiences.map(
-                ({ children, dateRange: date }, index) => (
+              {resumeData.experiences
+                .sort((a, b) => {
+                  const [prev, next] = [a, b].map(({ dateRange }) => {
+                    if (dateRange === undefined) {
+                      throw new Error('Data in experiences must have date');
+                    }
+                    return dateRange[0].valueOf();
+                  });
+                  return next - prev;
+                })
+                .map(({ children, dateRange }, index) => (
                   <ListSection
-                    dateRange={date}
+                    dateRange={dateRange}
                     underline={index !== resumeData.experiences.length - 1}
                   >
                     {children}
                   </ListSection>
-                ),
-              )}
+                ))}
             </div>
           </main>
           <aside className='flex flex-col gap-2'>
