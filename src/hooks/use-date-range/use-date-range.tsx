@@ -30,12 +30,11 @@ export function formatDateRangeToMonthYear(
     const monthEnd = months[dateRange[1].getMonth()];
     const year = dateRange[0].getFullYear();
     return [`${monthStart}`, `${monthEnd}, ${year}`];
-  } else {
-    return dateRange.map((date) => formatDateToMonthYear(date)) as [
-      string,
-      string,
-    ];
   }
+  return dateRange.map((date) => formatDateToMonthYear(date)) as [
+    string,
+    string,
+  ];
 }
 
 export function useDateRange({ dateRange }: DateRangeProps) {
@@ -47,6 +46,7 @@ export function useDateRange({ dateRange }: DateRangeProps) {
   if (isPresent) {
     dateTimeStartText = formatDateToMonthYear(dateRange[0]);
     dateTimeEndText = 'Present';
+    // biome-ignore lint/nursery/noUselessLoneBlockStatements: <type check>
   } else {
     [dateTimeStartText, dateTimeEndText] =
       formatDateRangeToMonthYear(dateRange);

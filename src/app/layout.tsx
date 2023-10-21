@@ -1,5 +1,5 @@
-import './global.css';
 import type { Metadata } from 'next';
+import './global.css';
 export const metadata: Metadata = {
   title: 'resume-template',
   description: 'resume template',
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <body className={`${fraunces.variable} bg-white`}>{children}</body>
     </html>
   );

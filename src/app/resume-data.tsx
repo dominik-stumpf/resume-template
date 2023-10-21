@@ -1,4 +1,4 @@
-import { ListSectionProps } from '../components/list-section/list-section-types';
+import { ListSectionProps } from '@/src/components/list-section/list-section-types';
 import { ReactNode } from 'react';
 
 interface ResumeDataProps {
@@ -124,5 +124,5 @@ export const resumeData: ResumeDataProps = {
       development and other bits and bobs :)
     </>
   ),
-  projects: ['astral-playland', 'chot'],
+  projects: ['astral-playland', 'chot', 'post-paper'],
 };

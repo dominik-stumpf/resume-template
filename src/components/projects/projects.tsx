@@ -1,6 +1,6 @@
-import { ListSection } from '../list-section/list-section';
-import { GitHubRepository } from './projects-types';
 import { resumeData } from '@/src/app/resume-data';
+import { ListSection } from '@/src/components/list-section/list-section';
+import { GitHubRepository } from './projects-types';
 
 const api = 'https://api.github.com/users/dominik-stumpf/repos';
 
@@ -21,7 +21,7 @@ export default async function Projects() {
   const filteredRepos = repos.filter((repo) => targetRepos.includes(repo.name));
 
   return filteredRepos.map((repo) => (
-    <ListSection tight>
+    <ListSection key={repo.name} tight>
       {{ title: repo.name, paragraph: repo.description }}
     </ListSection>
   ));
