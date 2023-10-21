@@ -1,5 +1,5 @@
 {
-  "$schema": "https://docs.rome.tools/schemas/12.1.3/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.2.2/schema.json",
   "organizeImports": {
     "enabled": true
   },
@@ -11,17 +11,20 @@
     "rules": {
       "all": true,
       "correctness": {
-        "noUnusedVariables": "off"
-      },
-      "style": {
-        "noImplicitBoolean": "off"
+        "noUnusedVariables": "warn"
       },
       "nursery": {
-        "all": true,
-        "noConsoleLog": "off"
+        "all": true
       },
       "suspicious": {
         "noRedundantUseStrict": "off"
+      },
+      "style": {
+        "noImplicitBoolean": "off",
+        "noNonNullAssertion": "warn"
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "warn"
       }
     }
   },
