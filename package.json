@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "apply-ci": "biome check --apply-unsafe app && biome format --write app",
+    "apply-ci": "biome check --apply-unsafe app && biome format --write app"
   },
   "dependencies": {
     "@biomejs/biome": "^1.3.1",
