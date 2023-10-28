@@ -14,17 +14,17 @@ export const resumeData: ResumeDataProps = {
       children: {
         title: 'WebGL, Three.js',
         paragraph:
-          'Started learning the OpenGL shading language and 3D graphics for the web.',
+          'Started learning the OpenGL shading language and 3D graphics.',
       },
       dateRange: [new Date(2023, 3, 14)],
     },
     {
       children: {
-        title: 'React, Typescript',
+        title: 'React, Typescript, Next.js',
         paragraph: (
           <>
-            These tools taught me type safety and along with Next.js introduced
-            me to the <em>component-based design</em> world.
+            With these tools at hand I mostly started making simple, but
+            scalable full-stack apps.
           </>
         ),
       },
@@ -86,24 +86,21 @@ export const resumeData: ResumeDataProps = {
     {
       children: {
         title: 'Programming Languages & Relations',
-        paragraph: <>HTML, CSS, SCSS, Javascript, Typescript, C#, Python</>,
+        paragraph: <>HTML, CSS, Javascript, Typescript, C#, Python</>,
       },
     },
     {
       children: {
         title: 'Libraries',
         paragraph: (
-          <>
-            React, styled-components, Emotion, Three.js, react-spring,
-            Socket.IO, tailwindcss, Prisma, Express, Next.js, r3f
-          </>
+          <>React, Three.js, react-spring, Socket.IO, tailwindcss, Next.js</>
         ),
       },
     },
     {
       children: {
         title: 'Design & Software',
-        paragraph: <>Figma, Inkscape, Blender</>,
+        paragraph: <>Figma</>,
       },
     },
     {
@@ -120,8 +117,8 @@ export const resumeData: ResumeDataProps = {
   ],
   interests: (
     <>
-      Math, computer graphics, calisthenics, Rustlang, typography, software
-      development and other bits and bobs :)
+      Math, computer graphics, calisthenics, <i>Rust</i>, typography and other
+      bits and bobs&nbsp;:)
     </>
   ),
   projects: ['astral-playland', 'chot', 'post-paper'],
