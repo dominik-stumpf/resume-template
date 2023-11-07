@@ -121,5 +121,5 @@ export const resumeData: ResumeDataProps = {
       bits and bobs&nbsp;:)
     </>
   ),
-  projects: ['astral-playland', 'chot', 'post-paper'],
+  projects: ['post-paper', 'chot', 'astral-playland'],
 };

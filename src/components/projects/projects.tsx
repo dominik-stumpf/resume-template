@@ -20,9 +20,15 @@ export default async function Projects() {
 
   const filteredRepos = repos.filter((repo) => targetRepos.includes(repo.name));
 
-  return filteredRepos.map((repo) => (
-    <ListSection key={repo.name} tight>
-      {{ title: repo.name, paragraph: repo.description }}
-    </ListSection>
-  ));
+  return targetRepos.map((repoName) => {
+    const repo = filteredRepos.find((repo) => repo.name === repoName);
+
+    return (
+      repo && (
+        <ListSection key={repo.name} tight>
+          {{ title: repo.name, paragraph: repo.description }}
+        </ListSection>
+      )
+    );
+  });
 }
