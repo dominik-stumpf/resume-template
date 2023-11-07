@@ -86,7 +86,7 @@ export const resumeData: ResumeDataProps = {
     {
       children: {
         title: 'Programming Languages & Relations',
-        paragraph: <>HTML, CSS, Javascript, Typescript, C#, Python</>,
+        paragraph: <>HTML, CSS, Javascript, Typescript, C#, Python, Markdown</>,
       },
     },
     {
@@ -108,8 +108,8 @@ export const resumeData: ResumeDataProps = {
         title: 'Tools & Platforms',
         paragraph: (
           <>
-            Git, Node, VSCode, Linux, Neovim, rome.tools, eslint/prettier,
-            Chrome DevTools, Markdown
+            Git, Node, VSCode, Linux, Neovim, eslint/prettier, Chrome DevTools,
+            Supabase
           </>
         ),
       },
