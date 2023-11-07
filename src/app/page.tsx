@@ -69,6 +69,9 @@ export default function Page() {
               </div>
             </div>
           </aside>
+          <div className="absolute bottom-1 left-2 text-xs text-body italic font-soft-serif">
+            last updated at {new Date().toLocaleDateString('hu')}
+          </div>
         </div>
       </div>
     </div>
