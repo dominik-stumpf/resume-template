@@ -7,17 +7,24 @@ import { ContactProps } from './contact-types';
 const contacts: ContactProps[] = [
   {
     icon: 'material-symbols:web',
-    href: 'dominikstumpf.com',
+    href: 'https://dominikstumpf.com',
+    title: 'dominikstumpf.com',
   },
   {
     icon: 'material-symbols:alternate-email-rounded',
-    href: 's.dominik.work@gmail.com',
+    href: 'mailto:s.dominik.work@gmail.com',
+    title: 's.dominik.work@gmail.com',
   },
   {
     icon: 'cib:github',
-    href: 'github.com/dominik-stumpf',
+    href: 'https://github.com/dominik-stumpf',
+    title: 'github.com/dominik-stumpf',
   },
-  { icon: 'cib:linkedin-in', href: 'linkedin.com/in/dominik-stumpf' },
+  {
+    icon: 'cib:linkedin-in',
+    href: 'https://linkedin.com/in/dominik-stumpf',
+    title: 'linkedin.com/in/dominik-stumpf',
+  },
 ];
 
 export function Contact() {
@@ -26,7 +33,9 @@ export function Contact() {
       {contacts.map((contact) => (
         <div key={contact.href} className="flex items-center gap-2">
           <Icon icon={contact.icon} className="w-3" />
-          <Body>{contact.href}</Body>
+          <a href={contact.href} target="_blank" rel="noopener noreferrer">
+            <Body>{contact.title}</Body>
+          </a>
         </div>
       ))}
     </address>
