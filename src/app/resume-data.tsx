@@ -93,7 +93,10 @@ export const resumeData: ResumeDataProps = {
       children: {
         title: 'Libraries',
         paragraph: (
-          <>React, Three.js, react-spring, Socket.IO, tailwindcss, Next.js...</>
+          <>
+            React, Three.js, react-spring, Socket.IO, tailwindcss, Next.js,
+            Radix UI...
+          </>
         ),
       },
     },

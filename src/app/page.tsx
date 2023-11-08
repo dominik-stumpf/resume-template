@@ -61,7 +61,7 @@ export default function Page() {
             <div className="pl-1.5">
               <Body>{resumeData.interests}</Body>
             </div>
-            <Header>Projects</Header>
+            <Header>Side Projects</Header>
             <div className="pl-1.5">
               <Projects />
               <div className="flex flex-col justify-center pl-2 mt-2 border-l-2 border-forest-green">
