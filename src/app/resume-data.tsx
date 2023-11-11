@@ -95,7 +95,7 @@ export const resumeData: ResumeDataProps = {
         paragraph: (
           <>
             React, Three.js, react-spring, Socket.IO, tailwindcss, Next.js,
-            Radix UI...
+            styled-components, Radix UI...
           </>
         ),
       },
